@@ -1,1 +1,1 @@
-from pygen.codegen import Codegen
+from pygen.codegen import *
