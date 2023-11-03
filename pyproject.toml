@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pygen"
+version = "0.1.0"
+description = ""
+authors = ["iopi <lionel.auroux@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pygen"}]
+include = [{path="test", format=["sdist", "wheel"]}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+
+[tool.poetry.scripts]
+ninjasm = "pygen:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
